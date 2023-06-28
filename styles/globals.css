@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black h-full text-zinc-200 !scrollbar-thin
+  !scrollbar-thumb-cyan-400 !scrollbar-track-zinc-900; 
+}
+
+html {
+  @apply h-full
+}
+
+#__next {
+  @apply h-full
+}
+
+.site-name {
+  @apply text-cyan-400 hover:text-cyan-300 transition
+  duration-500
+}
+
+.use-trebuchet {
+  font-family:'Trebuchet MS';
+}
+
+.mobileMenu {
+  @apply bg-zinc-400 hover:bg-zinc-500 sm:w-52 w-40 py-1.5 px-3
+  text-black transition duration-300
+}
+
+.accountMenu {
+  @apply bg-zinc-200 hover:bg-zinc-400
+  sm:py-2 py-1.5 lg:px-4 px-3 transition duration-300 text-black
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
